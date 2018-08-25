@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import * as api from "../../helpers/api";
 import "./Referrals.css";
+import ReferralForm from "../../components/Header/ReferralForm";
 
 class Referrals extends Component {
   state = {
@@ -17,7 +18,8 @@ class Referrals extends Component {
     return (
       <div>
         <h1>List of referrals</h1>
-        <div class="referrals-container">
+        <ReferralForm />
+        {/* <div class="referrals-container">
           {this.state.referrals.map(referral => {
             return (
               <div className="referral-info">
@@ -26,7 +28,7 @@ class Referrals extends Component {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     );
   }
